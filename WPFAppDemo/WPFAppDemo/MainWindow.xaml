@@ -6,15 +6,16 @@
         xmlns:local="clr-namespace:WPFAppDemo"
         xmlns:Fluent="clr-namespace:Fluent;assembly=Fluent"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="300" WindowState="Normal">
+        Title="MainWindow" Height="300" Width="300" >
     <Grid>
-        <Fluent:Ribbon>
+        <!--深入使用Fluent，参看官方说明和官方测试代码-->
+        <Fluent:Ribbon   IsQuickAccessToolBarVisible="False">
             <!--Backstage-->
-           <Fluent:Ribbon.Menu>
+            <Fluent:Ribbon.Menu>
                 <Fluent:Backstage>
                 </Fluent:Backstage>
             </Fluent:Ribbon.Menu>
-            
+           
             <!--Tabs-->
             <Fluent:RibbonTabItem Header="Tab">
                 <Fluent:RibbonGroupBox Header="Group">
